@@ -5,10 +5,11 @@ Code/Classifier
 -three pickle files (my_dataset.pkl, my_classifier.pkl, my_feature_list.pkl). 
 -modified poi_id.py file
 -intermediate code that you would like to provide as supplemental materials:
-   -NotebooksAndHTML/All_POI_Classifiers_Code.html contains all of the classifier attempts and outputs.
+   -NotebooksAndHTML/All_POI_Classifiers_Code_Round_2.html contains all the analysis code and output.
 
 Documentation of Your Work
 -ProjectQuestions.pdf
 
-Text File Listing Your References
+References
 -Sklearn documentation, http://scikit-learn.org/stable/documentation.html accessed between Dec 1, 2016 and Dec 29, 2016.
+-Precision and recall - Wikipedia, https://en.wikipedia.org/wiki/Precision_and_recall accessed Jan 4, 2017
