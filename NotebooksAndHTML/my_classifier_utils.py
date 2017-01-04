@@ -53,6 +53,7 @@ def audit_classifier_results(pred, labels):
     print "Precision:", metrics.precision_score(labels, pred)
     print "Recall:", metrics.recall_score(labels, pred)    
 
+
 def trainAndTestClassifier(classifier, features_train, 
                     features_test, labels_train, labels_test):
     print len(labels_train), "Training Points"
@@ -73,15 +74,7 @@ def trainAndTestClassifier(classifier, features_train,
     print ''
     
     return pred
-    
-from sklearn.preprocessing import MinMaxScaler
-def trainAndTestWithScale(classifier, features_train, 
-                    features_test, labels_train, labels_test):
-    scaler = MinMaxScaler()
-    rescaled_features_train = scaler.fit_transform(features_train)
-    rescaled_features_test = scaler.transform(features_test)
-    return trainAndTestClassifier (classifier, rescaled_features_train, rescaled_features_test, labels_train, labels_test)
-    
+
 
 def my_k_fold_test_abc(classifier, features, labels):
     from sklearn.model_selection import KFold
@@ -104,9 +97,10 @@ def my_k_fold_test (classifier, features, labels):
     k_fold = KFold(3)
 
     for k, (train, test) in enumerate(k_fold.split(features, labels)):
-        print "K ", k, "ABC"
+        print "K ", k
         k_pred = trainAndTestClassifier (
             classifier,
             [features[ii] for ii in train], [features[ii] for ii in test],
             [labels[ii] for ii in train], [labels[ii] for ii in test]) 
         print k_pred  
+        
