@@ -5,16 +5,4 @@ aS'other'
 p2
 aS'expenses'
 p3
-aS'total_stock_value'
-p4
-aS'exercised_stock_options'
-p5
-aS'long_term_incentive'
-p6
-aS'from_this_person_to_poi'
-p7
-aS'from_messages'
-p8
-aS'restricted_stock'
-p9
 a.

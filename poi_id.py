@@ -130,8 +130,7 @@ def get_best_decision_tree(data_dict, features_list):
     my_k_fold_test_short(best_dt, features, labels)
     return best_dt
 
-features_list_importance = ['poi', 'other', 'expenses', 'total_stock_value', 'exercised_stock_options',
-                            'long_term_incentive', 'from_this_person_to_poi', 'from_messages', 'restricted_stock']    
+features_list_importance = ['poi', 'other', 'expenses']    
 best_dt = get_best_decision_tree(data_dict, features_list_importance)
 
 

@@ -6,6 +6,7 @@ Code/Classifier
 -modified poi_id.py file
 -intermediate code that you would like to provide as supplemental materials:
    -NotebooksAndHTML/All_POI_Classifiers_Code_Round_2.html contains all the analysis code and output.
+   -NotebooksAndHTML/All_POI_Classifiers_Code_Round_3.html is similar but focuses on features feedback from grader.
 
 Documentation of Your Work
 -ProjectQuestions.pdf
